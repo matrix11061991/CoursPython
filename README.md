@@ -3,7 +3,7 @@ Ce cours s’adresse aux débutants qui souhaitent acquérir des bases de progra
 ## Présentation des outils de programmation
 
 ## Les bases rapides en Python
-
+Une variable, c’est comme un tiroir. C’est un moyen d’enregistrer vos données.
 ## Exécution d’un premier programme
 
 ## Les tests
