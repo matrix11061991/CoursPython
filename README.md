@@ -15,7 +15,25 @@ Python est un langage de programmation populaire pour la science des données, l
 
 Il y a bien d'autres outils disponibles, en fonction des besoins et du domaine d'application.
 ## Les bases rapides en Python
-Une variable, c’est comme un tiroir. C’est un moyen d’enregistrer vos données.
+Les variables en Python sont des noms qui peuvent être utilisés pour stocker des valeurs de différents types (nombres, chaînes de caractères, etc.). Voici comment déclarer et utiliser des variables en Python :
+```python
+# déclaration d'une variable x et affectation de la valeur 10
+x = 10
+# affichage de la valeur de la variable x
+print(x)  # affiche 10
+# déclaration d'une variable y et affectation de la valeur "Bonjour"
+y = "Bonjour"
+# concaténation de la variable y avec la chaîne " tout le monde" et affectation du résultat à la variable z
+z = y + " tout le monde"
+# affichage de la valeur de la variable z
+print(z)  # affiche "Bonjour tout le monde"
+```
+Il y a quelques règles à respecter lors de la déclaration de variables en Python :
+
+* Le nom d'une variable ne peut pas commencer par un chiffre.
+* Le nom d'une variable ne peut pas contenir d'espaces ni de caractères spéciaux, à l'exception de l'underscore (_).
+* Le nom d'une variable ne peut pas être un mot clé réservé (par exemple `for`, `while`, `def`, etc.).
+En général, il est recommandé de donner des noms de variables significatifs et de respecter les conventions de style de Python, telles que le "camelCase" pour les noms de variables composées (par exemple `maVariable`) et l'underscore pour les noms de variables séparées par des mots (par exemple `mon_nom`).
 ## Exécution d’un premier programme
 ```python
 # ce code est un commentaire, il est ignoré par l'interpréteur
@@ -35,7 +53,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 Bonjour tout le monde !
 >>> 
 ```
-Vous pouvez également enregistrer ce code dans un fichier, par exemple mon_programme.py, et l'exécuter en utilisant la commande python mon_programme.py. Le résultat sera le même que précédemment :
+Vous pouvez également enregistrer ce code dans un fichier, par exemple `mon_programme.py`, et l'exécuter en utilisant la commande `python mon_programme.py`. Le résultat sera le même que précédemment :
 ```bash
 $ python mon_programme.py
 Bonjour tout le monde ! 
@@ -46,15 +64,10 @@ Bonjour tout le monde !
 La structure conditionnelle if est une structure de base qu'on retourne dans de nombreux langages de script. Cette condition va nous permettre d'exécuter un code si (et seulement si) une certaine condition est vérifiée. On va en fait passer une expression à cette condition qui va être évaluée par Python.
 ```python
 # flux parent
-
 if condition:
-
     #bloc d'instructions exécuté si la valeur de condition est True
-
 else:
-
     #bloc d'instructions exécuté si la valeur de condition est False
-
 #retour au  flux parent
 ```
 ### Les opérateurs de comparaison
