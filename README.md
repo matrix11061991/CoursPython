@@ -59,8 +59,6 @@ $ python mon_programme.py
 Bonjour tout le monde ! 
 ```
 ## Les tests
-
-
 La structure conditionnelle if est une structure de base qu'on retourne dans de nombreux langages de script. Cette condition va nous permettre d'exécuter un code si (et seulement si) une certaine condition est vérifiée. On va en fait passer une expression à cette condition qui va être évaluée par Python.
 ```python
 # flux parent
@@ -71,11 +69,48 @@ else:
 #retour au  flux parent
 ```
 ### Les opérateurs de comparaison
+Les opérateurs de comparaison en Python sont utilisés pour comparer des valeurs et renvoyer un résultat booléen (True ou False). Voici la liste des opérateurs de comparaison disponibles en Python :
+* `==` : égal à
+* `!=` : différent de
+* `<` : strictement inférieur à
+* `<=` : inférieur ou égal à
+* `>` : strictement supérieur à
+* `>=` : supérieur ou égal à
+Voici quelques exemples d'utilisation des opérateurs de comparaison :
+```python
+x = 10
+y = 20
 
+print(x == y)  # False
+print(x != y)  # True
+print(x < y)   # True
+print(x <= y)  # True
+print(x > y)   # False
+print(x >= y)  # False
+
+s1 = "Bonjour"
+s2 = "Bonjour"
+s3 = "Salut"
+
+print(s1 == s2)  # True
+print(s1 != s3)  # True
+print(s1 < s3)   # True
+print(s1 <= s3)  # True
+print(s1 > s3)   # False
+print(s1 >= s3)  # False
+```
+Il est important de noter que les opérateurs de comparaison sont différents des opérateurs de calcul (`+`, `-`, `*`, `/`, etc.). Par exemple, l'expression `10 + 20` ne sera pas évaluée comme une comparaison, mais comme une opération de calcul qui renvoie la valeur 30.
 ## Les boucles
+```python
 
+```
 ## Les principaux types de données
 
 ## Les tuples en Python
+```python
 
+```
 ## Les fonctions en Python
+```python
+
+```
