@@ -3,7 +3,7 @@ Ce cours s’adresse aux débutants qui souhaitent acquérir des bases de progra
 ## Présentation des outils de programmation
 Python est un langage de programmation populaire pour la science des données, le développement web, l'automatisation de tâches et bien d'autres choses. Il existe plusieurs outils qui peuvent vous aider à utiliser Python de manière efficace et productive. Voici quelques exemples d'outils couramment utilisés :
 
-* Interpréteur Python : c'est l'outil de base pour exécuter du code Python. Vous pouvez l'utiliser en mode interactif en entrant des instructions une par une, ou bien en exécutant un fichier de code en utilisant la commande python mon_fichier.py.
+* Interpréteur Python : c'est l'outil de base pour exécuter du code Python. Vous pouvez l'utiliser en mode interactif en entrant des instructions une par une, ou bien en exécutant un fichier de code en utilisant la commande `python mon_fichier.py`.
 
 * IDE (Integrated Development Environment) : ce sont des environnements de développement intégrés qui vous permettent d'écrire, de déboguer et de tester du code Python de manière plus pratique. Exemples d'IDE populaires : PyCharm, IDLE (inclus avec l'installation de Python), Visual Studio Code, Eclipse avec le plugin PyDev.
 
@@ -101,9 +101,24 @@ print(s1 >= s3)  # False
 ```
 Il est important de noter que les opérateurs de comparaison sont différents des opérateurs de calcul (`+`, `-`, `*`, `/`, etc.). Par exemple, l'expression `10 + 20` ne sera pas évaluée comme une comparaison, mais comme une opération de calcul qui renvoie la valeur 30.
 ## Les boucles
+En programmation, les boucles servent à executer une ou plusieurs instructions plusieurs fois. En python il existe deux types de boucles.
+### La boucle `while`
+La boucle while permet d'executer une ou plusieurs instructions à la suite et s'arrête lorsque sa condition de départ est fausse. Voici un petit schéma pour vous donner un aperçu:
 ```python
-
+while <condition>:
+    <instructions>
 ```
+Voici un exemple en cas réel, ce programme affiche les nombre allant de 1 à 30 puis s'arrête car la condition jour <= 30 n'est plus vraie après que jour soit égal à 31 :
+```python
+jour = 1
+while jour <= 30:
+    print(jour)
+    jour = jour + 1 
+```
+> **Note**
+> : Attention si vous n'actualiser pas la variable jour, ça risque de créer une boucle infinie. Si vous désirez en utiliser une, vous pouvez écrire `while True:`
+### La boucle `for`
+
 ## Les principaux types de données
 
 ## Les tuples en Python
