@@ -59,7 +59,7 @@ $ python mon_programme.py
 Bonjour tout le monde ! 
 ```
 ## Les conditions
-La structure conditionnelle if est une structure de base qu'on retrouve dans de nombreux langages de programmation. Cette condition va nous permettre d'exécuter un code si (et seulement si) une certaine condition est vérifiée. On va en fait passer une expression à cette condition qui va être évaluée par Python.
+La structure conditionnelle `if`est une structure de base qu'on retrouve dans de nombreux langages de programmation. Cette condition va nous permettre d'exécuter un code si (et seulement si) une certaine condition est vérifiée. On va en fait passer une expression à cette condition qui va être évaluée par Python.
 ```python
 # flux parent
 if condition:
