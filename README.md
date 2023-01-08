@@ -118,6 +118,67 @@ while jour <= 30:
 > **Note**
 > : Attention si vous n'actualiser pas la variable jour, ça risque de créer une boucle infinie. Si vous désirez en utiliser une, vous pouvez écrire `while True:`
 ### La boucle `for`
+La boucle `for` en Python permet de répéter un bloc de code un nombre de fois déterminé. Voici un exemple de boucle for qui parcourt une séquence de nombres de 0 à 4 et affiche chaque nombre :
+```python
+for i in range(5):
+    print(i)
+```
+Le résultat de ce code sera :
+```bash
+0
+1
+2
+3
+4
+```
+**Comment ça marche ?**
+
+La boucle `for` en Python prend chaque valeur de la séquence une par une, et assigne cette valeur à la variable itérative (ici, `i`). Le bloc de code à l'intérieur de la boucle est alors exécuté pour chaque valeur de la séquence.
+
+Dans l'exemple ci-dessus, nous avons utilisé la fonction `range(5)`, qui retourne une séquence de nombres de `0` à `4`. La boucle `for` parcourt cette séquence, et exécute le bloc de code (ici, l'instruction `print(i)`) pour chaque valeur de `i`.
+
+Autres exemples de boucles for
+Voici quelques autres exemples de boucles for avec différentes séquences :
+```python
+# Imprime les nombres de 1 à 5
+for i in range(1, 6):
+    print(i)
+
+# Imprime les nombres pairs de 0 à 10
+for i in range(0, 11, 2):
+    print(i)
+
+# Imprime les éléments d'une liste
+fruits = ['pomme', 'banane', 'mangue']
+for fruit in fruits:
+    print(fruit)
+
+# Imprime les caractères d'une chaîne de caractères
+for caractere in "Bonjour":
+    print(caractere)
+```
+Il est également possible de mettre une condition if dans une boucle for pour exécuter le bloc de code uniquement si la condition est vraie :
+```python
+# Imprime les nombres impairs de 0 à 10
+for i in range(0, 11):
+    if i % 2 == 1:
+        print(i)
+```
+Il est également possible d'utiliser la fonction break pour sortir d'une boucle for avant la fin de la séquence, et la fonction continue pour passer à l'itération suivante sans exécuter le reste du code de l'itération en cours.
+```python
+# Cherche un nombre pair dans la séquence et sort de la boucle dès qu'il est trouvé
+for i in range(0, 11):
+    if i % 2 == 0:
+        print("Trouvé :", i)
+        break
+
+# Ne traite pas les nombres pairs
+for i in range(0, 11):
+    if i % 2 == 0:
+        continue
+    print(i)
+```
+
 
 ## Les principaux types de données
 
