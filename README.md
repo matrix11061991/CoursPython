@@ -192,6 +192,20 @@ Voici les principaux types de données en Python :
 9. **Dictionnaires (dict) :** ce sont des collections non ordonnées de paires clé-valeur, où la clé est unique. Les éléments sont encadrés par des accolades et chaque paire clé-valeur est séparée par une virgule. La clé et la valeur sont séparées par un deux-points. Par exemple : {'prenom': 'John', 'nom': 'Doe'}, {1: 'un', 2: 'deux'}.
 
 ## Les fonctions en Python
-```python
+En Python, une fonction est une portion de code qui accomplit une tâche précise et qui peut être réutilisée plusieurs fois dans un programme.
 
+Pour définir une fonction en Python, on utilise le mot clé `def` :
+```python
+def nom_de_la_fonction(parametres):
+    # Code de la fonction
+    return resultat
+```
+Cet exemple de fonction calcule le carré d'un nombre :
+```python
+def carre(x):
+    resultat = x ** 2
+    return resultat
+
+print(carre(5))  # Affiche 25
+print(carre(2))  # Affiche 4
 ```
