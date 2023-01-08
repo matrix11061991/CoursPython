@@ -181,11 +181,16 @@ for i in range(0, 11):
 
 
 ## Les principaux types de données
+Voici les principaux types de données en Python :
+1. **Nombres entiers (int) :** ce sont des nombres entiers positifs ou négatifs, sans décimale. Par exemple : 0, -5, 100.
+2. **Nombres à virgule flottante (float) :** ce sont des nombres décimaux, positifs ou négatifs. Par exemple : 3.14, -0.01.
+3. **Booléens (bool) :** ils peuvent prendre deux valeurs : True ou False. Ils sont souvent utilisés dans les conditions if pour tester si une condition est vraie ou fausse.
+4. **Chaines de caractères (str) :** ce sont des séquences de caractères encadrées par des guillemets. Elles peuvent être simples ('hello') ou doubles ("hello"). Par exemple : "Bonjour", 'Voiture'.
+6. **Listes (list) :** ce sont des séquences ordonnées d'éléments qui peuvent être de n'importe quel type. Les éléments sont encadrés par des crochets et séparés par des virgules. Par exemple : [1, 2, 3, 4], ['pomme', 'banane', 'mangue'].
+7. **Tuples (tuple) :** ce sont des séquences ordonnées d'éléments qui peuvent être de n'importe quel type, similaires aux listes. Cependant, contrairement aux listes, les tuples sont immuables, c'est-à-dire que vous ne pouvez pas ajouter, supprimer ou modifier leurs éléments une fois qu'ils ont été créés. Les éléments sont encadrés par des parenthèses et séparés par des virgules. Par exemple : (1, 2, 3, 4), ('pomme', 'banane', 'mangue').
+8. **Ensembles (set) :** ce sont des collections non ordonnées d'éléments uniques, qui peuvent être de n'importe quel type. Les éléments sont encadrés par des accolades et séparés par des virgules. Par exemple : {1, 2, 3, 4}, {'pomme', 'banane', 'mangue'}.
+9. **Dictionnaires (dict) :** ce sont des collections non ordonnées de paires clé-valeur, où la clé est unique. Les éléments sont encadrés par des accolades et chaque paire clé-valeur est séparée par une virgule. La clé et la valeur sont séparées par un deux-points. Par exemple : {'prenom': 'John', 'nom': 'Doe'}, {1: 'un', 2: 'deux'}.
 
-## Les tuples en Python
-```python
-
-```
 ## Les fonctions en Python
 ```python
 
