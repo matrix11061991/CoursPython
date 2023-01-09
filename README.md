@@ -209,3 +209,29 @@ def carre(x):
 print(carre(5))  # Affiche 25
 print(carre(2))  # Affiche 4
 ```
+### les fonctions anonymes en python
+Les fonctions anonymes, également appelées fonctions lambda en Python, sont des fonctions sans nom qui sont définies sans utiliser le mot-clé def. Elles sont généralement utilisées pour créer de petites fonctions simples et faciles à lire.
+
+Le code suivant permet de définir une fonction lambda en Python :
+```python
+lambda arguments: expression
+```
+Par exemple, voici comment définir une fonction lambda qui prend un argument x et retourne son carré :
+```python
+f = lambda x: x**2
+print(f(5))  # affiche 25
+```
+Les fonctions lambda peuvent également être utilisées avec plusieurs arguments :
+```python
+f = lambda x, y: x + y
+print(f(1, 2))  # affiche 3
+```
+Il est également possible de mettre une fonction lambda dans une liste ou un dictionnaire, ou de la passer en tant qu'argument à une autre fonction.
+
+Le code suivant montre comment utiliser une fonction lambda dans le tri d'une liste :
+```python
+# Tri de la liste "words" en fonction de la longueur des mots
+words = ['apple', 'banana', 'cherry', 'date']
+words.sort(key=lambda x: len(x))
+print(words)  # affiche ['date', 'apple', 'banana', 'cherry']
+```
