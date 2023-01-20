@@ -1,4 +1,5 @@
 # solution exo 1
+```python
 class Voiture:
     def __init__(self, marque, modele, annee, vitesse_max, nb_portes):
         self.marque = marque
@@ -33,3 +34,4 @@ ma_voiture.accelerer()
 ma_voiture.accelerer()
 ma_voiture.freiner()
 ma_voiture.afficher_infos()
+```
