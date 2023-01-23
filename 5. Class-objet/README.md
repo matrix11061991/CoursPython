@@ -1,6 +1,6 @@
 ## Exercices
 ### Objectif : 
-Utiliser les concepts de la programmation orientée objet en créant une classe "Voiture" qui possède les caractéristiques suivantes : marque, modèle, année, vitesse maximale et nombre de portes. La classe doit également avoir des méthodes pour accélérer, freiner et afficher les informations de la voiture.
+Utiliser les concepts de la programmation orientée objet en créant des classes qui possèdent des caractéristiques.
 ### Exo 1 - Créer une classe "Voiture"
 1. Créez une classe appelée "Voiture"
 2. Ajoutez les attributs suivants à la classe : marque, modèle, année, vitesse maximale et nombre de portes.
