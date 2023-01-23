@@ -35,3 +35,39 @@ ma_voiture.accelerer()
 ma_voiture.freiner()
 ma_voiture.afficher_infos()
 ```
+# solution exo 2
+```python
+class Form:
+    def __init__(self):
+        self.fields = []
+
+    def add_field(self, field):
+        self.fields.append(field)
+
+    def render(self):
+        form = '<form>'
+        for field in self.fields:
+            form += field.render()
+        form += '</form>'
+        return form
+
+class TextField:
+    def __init__(self, name):
+        self.name = name
+
+    def render(self):
+        return '<input type="text" name="{}">'.format(self.name)
+
+class PasswordField:
+    def __init__(self, name):
+        self.name = name
+
+    def render(self):
+        return '<input type="password" name="{}">'.format(self.name)
+
+form = Form()
+form.add_field(TextField("username"))
+form.add_field(PasswordField("surname"))
+form.add_field(PasswordField("password"))
+print(form.render())
+```
