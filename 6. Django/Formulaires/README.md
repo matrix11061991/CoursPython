@@ -13,3 +13,41 @@
 6. Dans le fichier urls.py de votre application, créez une nouvelle URL pour afficher le formulaire. Cette URL doit correspondre à la fonction de vue créée précédemment.
 
 7. Enfin, créez un modèle de rendu qui affiche le formulaire dans votre template HTML. Vous pouvez utiliser les balises de modèle Django pour afficher les champs de formulaire et les messages d'erreur.
+
+
+### Dans `model.py`
+```python
+from django.db import models
+
+class User(models.Model):
+    name = models.CharField(max_length=100)
+    email = models.EmailField()
+```
+### Dans  `forms.py` :
+```python
+from django import forms
+
+class UserForm(forms.Form):
+    name = forms.CharField(label='Your name', max_length=100)
+    email = forms.EmailField(label='Your email')
+```
+### Dans  `views.py` :
+```python
+from django.shortcuts import render
+from .forms import UserForm
+
+def user_signup(request):
+    if request.method == 'POST':
+        form = UserForm(request.POST)
+        if form.is_valid():
+            # Do something with the form data
+            # For example, save it to the database
+            User.objects.create(
+                name=form.cleaned_data['name'],
+                email=form.cleaned_data['email']
+            )
+    else:
+        form = UserForm()
+    return render(request, 'signup.html', {'form': form})
+```
+
