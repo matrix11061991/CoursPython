@@ -50,4 +50,22 @@ def user_signup(request):
         form = UserForm()
     return render(request, 'signup.html', {'form': form})
 ```
+### Dans  `urls.py` :
+```python
+from django.urls import path
+from .views import user_signup
+
+urlpatterns = [
+    path('signup/', user_signup, name='user_signup'),
+]
+```
+### Dans  `signup.html` :
+```html
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Sign up</button>
+</form>
+```
+
 
