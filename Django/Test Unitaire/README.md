@@ -31,3 +31,16 @@ class MyModelTestCase(TestCase):
         obj = MyModel.objects.get(name="foo")
         self.assertEqual(obj.value, 42)
 ```
+Dans cet exemple, nous avons créé une classe de test `MyModelTestCase` qui hérite de la classe TestCase. Dans la méthode setUp, nous avons créé un objet `MyModel` dans la base de données avec le nom "foo" et la valeur 42.
+
+Nous avons ensuite écrit deux méthodes de test pour vérifier que le nom et la valeur de l'objet créé sont corrects. Dans chaque méthode, nous avons utilisé la méthode d'assertion `self.assertEqual()` pour vérifier que la valeur attendue est égale à la valeur réelle de l'objet.
+
+Vous pouvez exécuter les tests en utilisant la commande suivante dans la console :
+```bash
+python manage.py test
+```
+Cette commande exécute tous les tests dans votre projet Django et affiche les résultats à l'écran. Si vous voulez exécuter uniquement les tests dans une application spécifique, vous pouvez préciser le nom de l'application comme argument :
+```bash
+python manage.py test myapp
+```
+Cela exécutera uniquement les tests dans l'application `myapp`.
