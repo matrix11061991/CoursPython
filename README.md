@@ -103,12 +103,12 @@ Il est important de noter que les opérateurs de comparaison sont différents de
 ## Les boucles
 En programmation, les boucles servent à executer une ou plusieurs instructions plusieurs fois. En python il existe deux types de boucles.
 ### La boucle `while`
-La boucle while permet d'executer une ou plusieurs instructions à la suite et s'arrête lorsque sa condition de départ est fausse. Voici un petit schéma pour vous donner un aperçu:
+La boucle `while` permet d'executer une ou plusieurs instructions à la suite et s'arrête lorsque sa condition de départ est fausse. Voici un petit schéma pour vous donner un aperçu:
 ```python
 while <condition>:
     <instructions>
 ```
-Voici un exemple en cas réel, ce programme affiche les nombre allant de 1 à 30 puis s'arrête car la condition jour <= 30 n'est plus vraie après que jour soit égal à 31 :
+Voici un exemple en cas réel, ce programme affiche les nombre allant de 1 à 30 puis s'arrête car la condition `jour <= 30` n'est plus vraie après que `jour` soit égal à `31` :
 ```python
 jour = 1
 while jour <= 30:
@@ -116,9 +116,9 @@ while jour <= 30:
     jour = jour + 1 
 ```
 > **Note**
-> : Attention si vous n'actualiser pas la variable jour, ça risque de créer une boucle infinie. Si vous désirez en utiliser une, vous pouvez écrire `while True:`
+> : Attention si vous n'actualiser pas la variable `jour`, ça risque de créer une boucle infinie. Si vous désirez en utiliser une, vous pouvez écrire `while True:`
 ### La boucle `for`
-La boucle `for` en Python permet de répéter un bloc de code un nombre de fois déterminé. Voici un exemple de boucle for qui parcourt une séquence de nombres de 0 à 4 et affiche chaque nombre :
+La boucle `for` en Python permet de répéter un bloc de code un nombre de fois déterminé. Voici un exemple de boucle `for` qui parcourt une séquence de nombres de `0` à `4` et affiche chaque nombre :
 ```python
 for i in range(5):
     print(i)
@@ -137,8 +137,8 @@ La boucle `for` en Python prend chaque valeur de la séquence une par une, et as
 
 Dans l'exemple ci-dessus, nous avons utilisé la fonction `range(5)`, qui retourne une séquence de nombres de `0` à `4`. La boucle `for` parcourt cette séquence, et exécute le bloc de code (ici, l'instruction `print(i)`) pour chaque valeur de `i`.
 
-Autres exemples de boucles for
-Voici quelques autres exemples de boucles for avec différentes séquences :
+Autres exemples de boucles `for`
+Voici quelques autres exemples de boucles `for` avec différentes séquences :
 ```python
 # Imprime les nombres de 1 à 5
 for i in range(1, 6):
@@ -157,14 +157,14 @@ for fruit in fruits:
 for caractere in "Bonjour":
     print(caractere)
 ```
-Il est également possible de mettre une condition if dans une boucle for pour exécuter le bloc de code uniquement si la condition est vraie :
+Il est également possible de mettre une condition if dans une boucle `for` pour exécuter le bloc de code uniquement si la condition est vraie :
 ```python
 # Imprime les nombres impairs de 0 à 10
 for i in range(0, 11):
     if i % 2 == 1:
         print(i)
 ```
-Il est également possible d'utiliser la fonction break pour sortir d'une boucle for avant la fin de la séquence, et la fonction continue pour passer à l'itération suivante sans exécuter le reste du code de l'itération en cours.
+Il est également possible d'utiliser la fonction `break` pour sortir d'une boucle `for` avant la fin de la séquence, et la fonction continue pour passer à l'itération suivante sans exécuter le reste du code de l'itération en cours.
 ```python
 # Cherche un nombre pair dans la séquence et sort de la boucle dès qu'il est trouvé
 for i in range(0, 11):
@@ -178,18 +178,16 @@ for i in range(0, 11):
         continue
     print(i)
 ```
-
-
 ## Les principaux types de données
 Voici les principaux types de données en Python :
-1. **Nombres entiers (int) :** ce sont des nombres entiers positifs ou négatifs, sans décimale. Par exemple : 0, -5, 100.
-2. **Nombres à virgule flottante (float) :** ce sont des nombres décimaux, positifs ou négatifs. Par exemple : 3.14, -0.01.
-3. **Booléens (bool) :** ils peuvent prendre deux valeurs : True ou False. Ils sont souvent utilisés dans les conditions if pour tester si une condition est vraie ou fausse.
-4. **Chaines de caractères (str) :** ce sont des séquences de caractères encadrées par des guillemets. Elles peuvent être simples ('hello') ou doubles ("hello"). Par exemple : "Bonjour", 'Voiture'.
-6. **Listes (list) :** ce sont des séquences ordonnées d'éléments qui peuvent être de n'importe quel type. Les éléments sont encadrés par des crochets et séparés par des virgules. Par exemple : [1, 2, 3, 4], ['pomme', 'banane', 'mangue'].
-7. **Tuples (tuple) :** ce sont des séquences ordonnées d'éléments qui peuvent être de n'importe quel type, similaires aux listes. Cependant, contrairement aux listes, les tuples sont immuables, c'est-à-dire que vous ne pouvez pas ajouter, supprimer ou modifier leurs éléments une fois qu'ils ont été créés. Les éléments sont encadrés par des parenthèses et séparés par des virgules. Par exemple : (1, 2, 3, 4), ('pomme', 'banane', 'mangue').
-8. **Ensembles (set) :** ce sont des collections non ordonnées d'éléments uniques, qui peuvent être de n'importe quel type. Les éléments sont encadrés par des accolades et séparés par des virgules. Par exemple : {1, 2, 3, 4}, {'pomme', 'banane', 'mangue'}.
-9. **Dictionnaires (dict) :** ce sont des collections non ordonnées de paires clé-valeur, où la clé est unique. Les éléments sont encadrés par des accolades et chaque paire clé-valeur est séparée par une virgule. La clé et la valeur sont séparées par un deux-points. Par exemple : {'prenom': 'John', 'nom': 'Doe'}, {1: 'un', 2: 'deux'}.
+1. **Nombres entiers (`int`) :** ce sont des nombres entiers positifs ou négatifs, sans décimale. Par exemple : 0, -5, 100.
+2. **Nombres à virgule flottante (`float`) :** ce sont des nombres décimaux, positifs ou négatifs. Par exemple : 3.14, -0.01.
+3. **Booléens (`bool`) :** ils peuvent prendre deux valeurs : True ou False. Ils sont souvent utilisés dans les conditions if pour tester si une condition est vraie ou fausse.
+4. **Chaines de caractères (`str`) :** ce sont des séquences de caractères encadrées par des guillemets. Elles peuvent être simples ('hello') ou doubles ("hello"). Par exemple : "Bonjour", 'Voiture'.
+6. **Listes (`list`) :** ce sont des séquences ordonnées d'éléments qui peuvent être de n'importe quel type. Les éléments sont encadrés par des crochets et séparés par des virgules. Par exemple : [1, 2, 3, 4], ['pomme', 'banane', 'mangue'].
+7. **Tuples (`tuple`) :** ce sont des séquences ordonnées d'éléments qui peuvent être de n'importe quel type, similaires aux listes. Cependant, contrairement aux listes, les tuples sont immuables, c'est-à-dire que vous ne pouvez pas ajouter, supprimer ou modifier leurs éléments une fois qu'ils ont été créés. Les éléments sont encadrés par des parenthèses et séparés par des virgules. Par exemple : (1, 2, 3, 4), ('pomme', 'banane', 'mangue').
+8. **Ensembles (`set`) :** ce sont des collections non ordonnées d'éléments uniques, qui peuvent être de n'importe quel type. Les éléments sont encadrés par des accolades et séparés par des virgules. Par exemple : {1, 2, 3, 4}, {'pomme', 'banane', 'mangue'}.
+9. **Dictionnaires (`dict`) :** ce sont des collections non ordonnées de paires clé-valeur, où la clé est unique. Les éléments sont encadrés par des accolades et chaque paire clé-valeur est séparée par une virgule. La clé et la valeur sont séparées par un deux-points. Par exemple : {'prenom': 'John', 'nom': 'Doe'}, {1: 'un', 2: 'deux'}.
 
 ## Les fonctions en Python
 En Python, une fonction est une portion de code qui accomplit une tâche précise et qui peut être réutilisée plusieurs fois dans un programme.
@@ -210,25 +208,25 @@ print(carre(5))  # Affiche 25
 print(carre(2))  # Affiche 4
 ```
 ### les fonctions anonymes en python
-Les fonctions anonymes, également appelées fonctions lambda en Python, sont des fonctions sans nom qui sont définies sans utiliser le mot-clé def. Elles sont généralement utilisées pour créer de petites fonctions simples et faciles à lire.
+Les fonctions anonymes, également appelées fonctions `lambda` en Python, sont des fonctions sans nom qui sont définies sans utiliser le mot-clé `def`. Elles sont généralement utilisées pour créer de petites fonctions simples et faciles à lire.
 
-Le code suivant permet de définir une fonction lambda en Python :
+Le code suivant permet de définir une fonction `lambda` en Python :
 ```python
 lambda arguments: expression
 ```
-Par exemple, voici comment définir une fonction lambda qui prend un argument x et retourne son carré :
+Par exemple, voici comment définir une fonction `lambda` qui prend un argument `x` et retourne son carré :
 ```python
 f = lambda x: x**2
 print(f(5))  # affiche 25
 ```
-Les fonctions lambda peuvent également être utilisées avec plusieurs arguments :
+Les fonctions `lambda` peuvent également être utilisées avec plusieurs arguments :
 ```python
 f = lambda x, y: x + y
 print(f(1, 2))  # affiche 3
 ```
-Il est également possible de mettre une fonction lambda dans une liste ou un dictionnaire, ou de la passer en tant qu'argument à une autre fonction.
+Il est également possible de mettre une fonction `lambda` dans une liste ou un dictionnaire, ou de la passer en tant qu'argument à une autre fonction.
 
-Le code suivant montre comment utiliser une fonction lambda dans le tri d'une liste :
+Le code suivant montre comment utiliser une fonction `lambda` dans le tri d'une liste :
 ```python
 # Tri de la liste "words" en fonction de la longueur des mots
 words = ['apple', 'banana', 'cherry', 'date']
