@@ -1,5 +1,5 @@
 ## Exercice 1: Les listes
-On vous donne une liste d'entiers. Ecrire un programme Python qui permet de :
+  On vous donne une liste d'entiers. Ecrire un programme Python qui permet de :
 1. Trouver le plus grand élément de la liste.
 2. Trouver le plus petit élément de la liste.
 3. Calculer la somme de tous les éléments de la liste.
