@@ -51,8 +51,15 @@ print("La liste triée par ordre croissant est :", lst)
 element = 5
 index = lst.index(element)
 print("L'indice de la première occurrence de", element, "est :", index)
-
+## Exercice 2: Les listes
 # 10. Supprimer la première occurrence d'un élément donné dans la liste initiale.
 lst.remove(element)
 print("La liste après suppression de la première occurrence de", element, "est :", lst)
 ```
+## Exercice 1: Les piles (STACK)
+Écrivez une classe **Pile** en Python qui implémente une pile (stack) avec les méthodes suivantes :
+
+- $empiler(element)$: Ajoute un élément au sommet de la pile.
+- $depiler()$: Retire et retourne l'élément en haut de la pile.
+- `est_vide()`: Renvoie $True$ si la pile est vide, $False$ sinon.
+- $taille()$: Renvoie la taille de la pile.
