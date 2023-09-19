@@ -63,3 +63,37 @@ print("La liste après suppression de la première occurrence de", element, "est
 - $depiler()$: Retire et retourne l'élément en haut de la pile.
 - `est_vide()`: Renvoie $True$ si la pile est vide, $False$ sinon.
 - $taille()$: Renvoie la taille de la pile.
+```python
+class Pile:
+    def __init__(self):
+        self.elements = []
+
+    def empiler(self, element):
+        self.elements.append(element)
+
+    def depiler(self):
+        if not self.est_vide():
+            return self.elements.pop()
+        else:
+            print("La pile est vide. Impossible de dépiler.")
+
+    def est_vide(self):
+        return len(self.elements) == 0
+
+    def taille(self):
+        return len(self.elements)
+
+# Exemple d'utilisation de la classe Pile
+ma_pile = Pile()
+ma_pile.empiler(1)
+ma_pile.empiler(2)
+ma_pile.empiler(3)
+
+print("Taille de la pile :", ma_pile.taille())  # Output: 3
+
+element_depile = ma_pile.depiler()
+print("Élément dépilé :", element_depile)  # Output: 3
+print("Taille de la pile après dépilage :", ma_pile.taille())  # Output: 2
+
+print("La pile est vide :", ma_pile.est_vide())  # Output: False
+```
