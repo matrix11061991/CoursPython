@@ -56,7 +56,7 @@ print("L'indice de la première occurrence de", element, "est :", index)
 lst.remove(element)
 print("La liste après suppression de la première occurrence de", element, "est :", lst)
 ```
-## Exercice 1: Les piles (STACK)
+## Exercice 2: Les piles (STACK)
 Écrivez une classe **Pile** en Python qui implémente une pile (stack) avec les méthodes suivantes :
 
 - $empiler(element)$: Ajoute un élément au sommet de la pile.
@@ -96,4 +96,16 @@ print("Élément dépilé :", element_depile)  # Output: 3
 print("Taille de la pile après dépilage :", ma_pile.taille())  # Output: 2
 
 print("La pile est vide :", ma_pile.est_vide())  # Output: False
+```
+## Exercice 3:Lancer n fois d'un dé a 6 faces
+Simuler le lancer d'un dé à six faces (1, 2, 3, 4, 5, ou 6) n fois. La fonction doit retourner True si au moins l'un des n lancers a donné un résultat de 6, sinon elle retourne False. 
+```python
+from random import randint
+
+def lancer(n) :
+    # YOUR CODE HERE
+    res = []
+    for i in range(n):
+        res.append(randint(1,6) == 6)
+    return any(res)
 ```
