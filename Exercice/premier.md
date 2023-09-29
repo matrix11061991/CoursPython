@@ -10,7 +10,10 @@ def premier(n):
     return True
 
 print(premier(17))
-
+```
+ou encore si on compresse le code:
+```python
+def est_premier(n): return n > 1 and all(n % i for i in range(2, int(n**(1/2)) + 1))
 ```
 ou encore:
 ```python
