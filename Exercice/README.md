@@ -109,3 +109,4 @@ def lancer(n) :
         res.append(randint(1,6) == 6)
     return any(res)
 ```
+
