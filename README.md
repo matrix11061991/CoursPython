@@ -1,4 +1,14 @@
-# Cours Python 3
+```sh
+    ____                         _____       _   _                 
+  / ____|                       |  __ \     | | | |                
+ | |     ___  _   _ _ __ ___    | |__) |   _| |_| |__   ___  _ __  
+ | |    / _ \| | | | '__/ __|   |  ___/ | | | __| '_ \ / _ \| '_ \ 
+ | |___| (_) | |_| | |  \__ \   | |   | |_| | |_| | | | (_) | | | |
+  \_____\___/ \__,_|_|  |___/   |_|    \__, |\__|_| |_|\___/|_| |_|
+                                        __/ |                      
+                                       |___/                       
+
+```
 Ce cours s’adresse aux débutants qui souhaitent acquérir des bases de programmation en python.
 ## Présentation des outils de programmation
 Python est un langage de programmation populaire pour la science des données, le développement web, l'automatisation de tâches et bien d'autres choses. Il existe plusieurs outils qui peuvent vous aider à utiliser Python de manière efficace et productive. Voici quelques exemples d'outils couramment utilisés :
